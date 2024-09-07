@@ -234,7 +234,9 @@ public class TiCarModule extends KrollModule {
             String action = intent.getAction();
             if (action.equals("click")) {
                 kd.put("index", intent.getIntExtra("index", -1));
+                kd.put("templateId", intent.getStringExtra("templateId"));
                 fireEvent("click", kd);
+
             }
         }
     }

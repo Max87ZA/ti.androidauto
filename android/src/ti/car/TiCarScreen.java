@@ -1,10 +1,15 @@
 package ti.car;
 
-import static androidx.car.app.model.Action.BACK;
-
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
+
+import org.appcelerator.kroll.common.Log;
+import org.appcelerator.titanium.TiApplication;
+import org.appcelerator.titanium.util.TiConvert;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.HashMap;
 
 import androidx.annotation.NonNull;
 import androidx.car.app.CarContext;
@@ -19,28 +24,19 @@ import androidx.car.app.model.Tab;
 import androidx.car.app.model.TabContents;
 import androidx.car.app.model.TabTemplate;
 import androidx.car.app.model.MessageTemplate;
-import androidx.car.app.model.OnClickListener;
 import androidx.car.app.model.Row;
 import androidx.car.app.model.SectionedItemList;
 import androidx.car.app.model.Template;
 import androidx.core.graphics.drawable.IconCompat;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import org.appcelerator.kroll.common.Log;
-import org.appcelerator.titanium.TiApplication;
-import org.appcelerator.titanium.util.TiConvert;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import static androidx.car.app.model.Action.APP_ICON;
+import static androidx.car.app.model.Action.BACK;
 
 public class TiCarScreen extends Screen {
     private static CarContext globalCarContext;
-    private static final String LCAT = "TiCarModule";
+    public String templateId = "default";
+    public String headerAction = "icon";
     public TiCarScreen(CarContext carContext) {
         super(carContext);
         globalCarContext = carContext;
@@ -57,7 +53,8 @@ public class TiCarScreen extends Screen {
 
         HashMap listData = TiCarModule.listData;
         String templateType = TiConvert.toString(listData.get("type"), "list");
-
+        this.templateId = TiConvert.toString(listData.get("templateId"), "default");
+        this.headerAction = TiConvert.toString(listData.get("headerAction"), "icon");
         if (templateType.equals("message")) {
             MessageTemplate template = new MessageTemplate
                     .Builder(TiConvert.toString(listData.get("text"), ""))
@@ -144,16 +141,29 @@ public class TiCarScreen extends Screen {
                                 .setImage(CarIcon.APP_ICON)
                                 .setOnClickListener(() -> {
                                     Intent broadcastIntent = new Intent();
-                                    broadcastIntent.setAction("click").putExtra("index", finalI);
+                                    broadcastIntent.setAction("click")
+                                            .putExtra("index", finalI)
+                                            .putExtra("templateId", templateId);
                                     LocalBroadcastManager.getInstance(TiApplication.getAppCurrentActivity()).sendBroadcast(broadcastIntent);
                                 });
                         itemList.addItem(gridItem.build());
                     }
                 }
-                return templateBuilder.setTitle(data.getString("title"))
-                        .setHeaderAction(BACK)
-                        .setSingleList(itemList.build())
-                        .build();
+                if(headerAction.equals("icon"))
+                    return templateBuilder.setTitle(data.getString("title"))
+                            .setHeaderAction(APP_ICON)
+                            .setSingleList(itemList.build())
+                            .build();
+                else if(headerAction.equals("back"))
+                    return templateBuilder.setTitle(data.getString("title"))
+                            .setHeaderAction(BACK)
+                            .setSingleList(itemList.build())
+                            .build();
+                else
+                    return templateBuilder.setTitle(data.getString("title"))
+                            .setSingleList(itemList.build())
+                            .build();
+
             } catch (Exception ex) {
                 Log.e("TiCar", ex.toString());
                 return templateBuilder.setTitle("").build();
@@ -177,10 +187,21 @@ public class TiCarScreen extends Screen {
                         radioList.addItem(new Row.Builder().setTitle(item.getString("text")).build());
                     }
 
-                    ItemList itemList = radioList.setOnSelectedListener(this::onSelected).build();
+                    ItemList itemList = radioList.setOnSelectedListener(this::onSelected)
+                            .build();
                     templateBuilder.addSectionedList(SectionedItemList.create(itemList, sectionTitle));
                 }
-                return templateBuilder.setTitle(data.getString("title")).setHeaderAction(BACK).build();
+                if (headerAction.equals("icon"))
+                    return templateBuilder.setTitle(data.getString("title"))
+                            .setHeaderAction(APP_ICON)
+                            .build();
+                else if(headerAction.equals("back"))
+                    return templateBuilder.setTitle(data.getString("title"))
+                            .setHeaderAction(BACK)
+                            .build();
+                else
+                    return templateBuilder.setTitle(data.getString("title"))
+                            .build();
             } catch (Exception ex) {
                 Log.e("TiCar", ex.toString());
                 return templateBuilder.setTitle("").build();
@@ -193,7 +214,9 @@ public class TiCarScreen extends Screen {
 
     private void onSelected(int i) {
         Intent broadcastIntent = new Intent();
-        broadcastIntent.setAction("click").putExtra("index", i);
+        broadcastIntent.setAction("click")
+                .putExtra("index", i)
+                .putExtra("templateId", this.templateId);
         LocalBroadcastManager.getInstance(TiApplication.getAppCurrentActivity()).sendBroadcast(broadcastIntent);
     }
     public static Template createChildTemplate(JSONObject tabData) throws Exception {
