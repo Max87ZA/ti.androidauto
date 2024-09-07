@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/anim-v21/mtrl_bottom_sheet_slide_out.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/anim-v21/mtrl_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/anim-v21/fragment_fast_out_extra_slow_in.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/718040f2886d6ff78838ffe003e934cc/transformed/fragment-1.5.7/res/anim-v21/fragment_fast_out_extra_slow_in.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/anim-v21/mtrl_bottom_sheet_slide_in.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/anim-v21/mtrl_bottom_sheet_slide_in.xml"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/drawable-v23/m3_appbar_background.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/drawable-v23/m3_appbar_background.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/drawable-v23/m3_selection_control_ripple.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/drawable-v23/m3_selection_control_ripple.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/drawable-v23/m3_popupmenu_background_overlay.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/drawable-v23/m3_popupmenu_background_overlay.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/drawable-v23/abc_control_background_material.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/85a0f4b577959a2ad2aecc6eb8bb1298/transformed/appcompat-1.6.1/res/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/drawable-v23/m3_tabs_background.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/drawable-v23/m3_tabs_background.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/drawable-v23/titanium_splash_icon_background.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/14f78c9e77eae2b15f2f5f960c92969e/transformed/titanium-12.3.1/res/drawable-v23/titanium_splash_icon_background.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/drawable-v23/mtrl_popupmenu_background_overlay.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/drawable-v23/mtrl_popupmenu_background_overlay.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/drawable-v23/m3_radiobutton_ripple.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/drawable-v23/m3_radiobutton_ripple.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/drawable-v23/m3_tabs_transparent_background.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/drawable-v23/m3_tabs_transparent_background.xml"
+    }
+]

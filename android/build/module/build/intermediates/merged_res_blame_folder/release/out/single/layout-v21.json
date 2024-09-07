@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/41a2cd7457661756c62576f74411a971/transformed/core-1.9.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/layout-v21/notification_action.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/41a2cd7457661756c62576f74411a971/transformed/core-1.9.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/41a2cd7457661756c62576f74411a971/transformed/core-1.9.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/41a2cd7457661756c62576f74411a971/transformed/core-1.9.0/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

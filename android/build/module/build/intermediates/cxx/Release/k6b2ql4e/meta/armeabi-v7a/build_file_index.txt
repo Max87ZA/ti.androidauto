@@ -1,0 +1,1 @@
+/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk

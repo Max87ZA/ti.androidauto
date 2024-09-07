@@ -1,0 +1,184 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 19 min SDK version: x86",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1546234946
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/.cxx/Release/k6b2ql4e/x86/android_gradle_build.json due to:",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 948528524
+  },
+  {
+    "level_": 0,
+    "message_": "- expected json /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/.cxx/Release/k6b2ql4e/x86/android_gradle_build.json file is not present, will remove stale json folder",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 571769146
+  },
+  {
+    "level_": 0,
+    "message_": "- missing previous command file /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/.cxx/Release/k6b2ql4e/x86/metadata_generation_command.txt, will remove stale json folder",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 2095136216
+  },
+  {
+    "level_": 0,
+    "message_": "- command changed from previous, will remove stale json folder",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1783853893
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/.cxx/Release/k6b2ql4e/x86\u0027",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -15488685
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/.cxx/Release/k6b2ql4e/x86\u0027",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1444119903
+  },
+  {
+    "level_": 0,
+    "message_": "executing ndkBuild Executable : /Users/Max87/Library/android-sdk-macosx/ndk/21.4.7075529/ndk-build\narguments : \nNDK_PROJECT_PATH\u003dnull\nAPP_BUILD_SCRIPT\u003d/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk\nAPP_ABI\u003dx86\nNDK_ALL_ABIS\u003dx86\nNDK_DEBUG\u003d0\nAPP_PLATFORM\u003dandroid-19\nNDK_OUT\u003d/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/cxx/Release/k6b2ql4e/obj\nNDK_LIBS_OUT\u003d/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/cxx/Release/k6b2ql4e/lib\nAPP_CPPFLAGS+\u003d-std\u003dc++14\nAPP_STL:\u003dc++_shared\n-j12\n--output-sync\u003dnone\nAPP_SHORT_COMMANDS\u003dfalse\nLOCAL_SHORT_COMMANDS\u003dfalse\n-B\n-n\njvmArgs : \n\n",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1229411621
+  },
+  {
+    "level_": 0,
+    "message_": "Executable : /Users/Max87/Library/android-sdk-macosx/ndk/21.4.7075529/ndk-build\narguments : \nNDK_PROJECT_PATH\u003dnull\nAPP_BUILD_SCRIPT\u003d/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk\nAPP_ABI\u003dx86\nNDK_ALL_ABIS\u003dx86\nNDK_DEBUG\u003d0\nAPP_PLATFORM\u003dandroid-19\nNDK_OUT\u003d/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/cxx/Release/k6b2ql4e/obj\nNDK_LIBS_OUT\u003d/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/cxx/Release/k6b2ql4e/lib\nAPP_CPPFLAGS+\u003d-std\u003dc++14\nAPP_STL:\u003dc++_shared\n-j12\n--output-sync\u003dnone\nAPP_SHORT_COMMANDS\u003dfalse\nLOCAL_SHORT_COMMANDS\u003dfalse\n-B\n-n\njvmArgs : \n\n",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -853494744
+  },
+  {
+    "level_": 0,
+    "message_": "parse and convert ndk-build output to build configuration JSON",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 953630090
+  },
+  {
+    "level_": 0,
+    "message_": "done executing ndkBuild",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1476490640
+  },
+  {
+    "level_": 0,
+    "message_": "write command file /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/.cxx/Release/k6b2ql4e/x86/metadata_generation_command.txt",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1780445632
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk",
+    "tag_": "release|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -158127060
+  }
+]

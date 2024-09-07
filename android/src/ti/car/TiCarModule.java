@@ -12,16 +12,34 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 
+import androidx.car.app.model.CarIcon;
+import androidx.car.app.model.GridTemplate;
+import androidx.car.app.model.ListTemplate;
+import androidx.car.app.model.Tab;
+import androidx.car.app.model.TabContents;
+import androidx.car.app.model.TabTemplate;
+import androidx.car.app.model.TabTemplate.TabCallback;
+
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
+import org.appcelerator.kroll.common.Log;
 import org.appcelerator.kroll.common.TiConfig;
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.titanium.util.TiConvert;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
+import androidx.car.app.model.Template;
 import java.util.HashMap;
+import android.graphics.drawable.Drawable;
+import androidx.car.app.model.CarIcon;
+import androidx.core.graphics.drawable.IconCompat;
+
+import static androidx.car.app.model.Action.BACK;
+
 
 
 @Kroll.module(name = "TiCar", id = "ti.car")
@@ -32,6 +50,7 @@ public class TiCarModule extends KrollModule {
     private static final boolean DBG = TiConfig.LOGD;
     public static HashMap listData;
     private final IntentFilter mIntentFilter;
+    private static final HashMap<String, Template> templateStore = new HashMap<>();
 
     // You can define constants with @Kroll.constant, for example:
     // @Kroll.constant public static final String EXTERNAL_NAME = value;
@@ -50,9 +69,10 @@ public class TiCarModule extends KrollModule {
 
     // Methods
     @Kroll.method
-    public void createListTemplate(HashMap data) {
+    public void createListTemplate(KrollDict data, String templateId) {
         listData = data;
         listData.put("type", TiConvert.toString(data.get("type"), "list"));
+        templateStore.put(templateId, buildListTemplate(data));
     }
 
     @Kroll.method
@@ -60,10 +80,151 @@ public class TiCarModule extends KrollModule {
         listData = data;
         listData.put("type", "message");
     }
+    // Create a method to store grid templates as well
+    @Kroll.method
+    public void createGridTemplate(KrollDict data, String templateId) {
+        listData = data;
+        listData.put("type", "grid");
 
+        // Store the GridTemplate in the templateStore with the provided templateId
+        templateStore.put(templateId, buildGridTemplate(data));
+    }
     @Kroll.method
     public void createToast(String message) {
         TiCarScreen.createToast(message);
+    }
+
+
+    @Kroll.method
+    public void createTabTemplate(KrollDict data) {
+        try {
+            listData = data;
+            listData.put("type", "tab");
+
+            // Get the array of tab data from the Titanium side
+            Object[] tabsArray = (Object[]) data.get("tabs");
+
+            // Create a minimal TabCallback to handle basic tab selection
+            TabCallback tabCallback = new TabCallback() {
+
+                public void onTabSelected(int index, TabContents tabContents) {
+                    // Broadcast the tab selection event to the Titanium side
+                    KrollDict kd = new KrollDict();
+                    kd.put("index", index);
+                    fireEvent("onTabSelected", kd);
+                }
+            };
+
+            // Initialize the TabTemplate.Builder with the minimal TabCallback
+            TabTemplate.Builder tabTemplateBuilder = new TabTemplate.Builder(tabCallback);
+
+            // Loop through each tab data, create Tab objects with title and icon
+            for (Object tabObj : tabsArray) {
+                if (tabObj instanceof KrollDict) {
+                    KrollDict tabDict = (KrollDict) tabObj;
+
+                    String tabTitle = TiConvert.toString(tabDict.get("title"));  // Get the tab title
+                    String tabImage = TiConvert.toString(tabDict.get("image"));  // Get the tab image name
+
+                    // Create an icon from the resource name (image)
+                    CarIcon tabIcon = getIconFromResource(tabImage);
+
+                    if (tabIcon != null) {
+                        // Create the Tab object
+                        Tab tab = new Tab.Builder()
+                                .setTitle(tabTitle)
+                                .setIcon(tabIcon)
+                                .build();
+
+                        // Add the tab to the TabTemplate
+                        tabTemplateBuilder.addTab(tab);
+                    } else {
+                        Log.e(LCAT, "Tab icon or template could not be created");
+                    }
+                }
+            }
+
+            // Set the header action, e.g., BACK
+            tabTemplateBuilder.setHeaderAction(BACK);
+
+            // Build the final TabTemplate and store it in listData
+            listData.put("template", tabTemplateBuilder.build());
+
+        } catch (Exception e) {
+            Log.e(LCAT, "Error in createTabTemplate: " + e.toString());
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    private Template buildListTemplate(KrollDict data) {
+        // Logic for creating a ListTemplate
+        // This is similar to the existing code in TiCarScreen
+        try {
+            org.json.JSONObject jsonData = TiConvert.toJSON(data);
+            // Build the template based on the jsonData...
+            // Return the template object
+            ListTemplate.Builder templateBuilder = new ListTemplate.Builder();
+            // Populate the template builder with data here...
+            return templateBuilder.build();
+        } catch (Exception e) {
+            Log.e(LCAT, "Error creating ListTemplate: " + e.toString());
+            return null;
+        }
+    }
+
+    private Template buildGridTemplate(KrollDict data) {
+        // Logic for creating a GridTemplate
+        try {
+            org.json.JSONObject jsonData = TiConvert.toJSON(data);
+            // Build the template based on the jsonData...
+            GridTemplate.Builder templateBuilder = new GridTemplate.Builder();
+            // Populate the template builder with data here...
+            return templateBuilder.build();
+        } catch (Exception e) {
+            Log.e(LCAT, "Error creating GridTemplate: " + e.toString());
+            return null;
+        }
+    }
+    private CarIcon getIconFromResource(String imageName) {
+        try {
+            // Get the application context
+            Context context = TiApplication.getAppCurrentActivity();
+
+            // Get the resource ID of the drawable by its name
+            int resourceId = context.getResources().getIdentifier(imageName, "drawable", context.getPackageName());
+
+            if (resourceId != 0) {
+                // Create a Drawable object from the resource ID
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    Drawable drawable = context.getDrawable(resourceId);
+                }
+
+                // Convert the Drawable into a CarIcon using IconCompat
+                return new CarIcon.Builder(IconCompat.createWithResource(context, resourceId)).build();
+            } else {
+                Log.e(LCAT, "Icon resource not found: " + imageName);
+            }
+        } catch (Exception e) {
+            Log.e(LCAT, "Error loading icon: " + e.toString());
+        }
+
+        // Return a fallback icon or null if the icon wasn't found
+        return null;
     }
 
     public class LocalBroadcastReceiver extends BroadcastReceiver {
@@ -77,4 +238,6 @@ public class TiCarModule extends KrollModule {
             }
         }
     }
+
+
 }

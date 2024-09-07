@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/xml/standalone_badge_gravity_bottom_end.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/xml/standalone_badge_gravity_bottom_end.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/xml/standalone_badge_gravity_bottom_start.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/xml/standalone_badge_gravity_bottom_start.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/xml/standalone_badge_gravity_top_start.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/xml/standalone_badge_gravity_top_start.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/xml/standalone_badge.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/xml/standalone_badge.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/xml/titanium_ui_horizontal_nested_scrollview.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/14f78c9e77eae2b15f2f5f960c92969e/transformed/titanium-12.3.1/res/xml/titanium_ui_horizontal_nested_scrollview.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/xml/standalone_badge_offset.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/xml/standalone_badge_offset.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/xml/titanium_ui_vertical_nested_scrollview.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/14f78c9e77eae2b15f2f5f960c92969e/transformed/titanium-12.3.1/res/xml/titanium_ui_vertical_nested_scrollview.xml"
+    }
+]

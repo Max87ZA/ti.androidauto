@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/color-night-v8/material_timepicker_modebutton_tint.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/color-night-v8/material_timepicker_modebutton_tint.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/color-night-v8/material_timepicker_clockface.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/color-night-v8/material_timepicker_clockface.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/color-night-v8/material_timepicker_button_stroke.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/color-night-v8/material_timepicker_button_stroke.xml"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/interpolator-v21/mtrl_fast_out_linear_in.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/interpolator-v21/mtrl_fast_out_linear_in.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/interpolator-v21/mtrl_fast_out_slow_in.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/interpolator-v21/mtrl_fast_out_slow_in.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/interpolator-v21/mtrl_linear_out_slow_in.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/interpolator-v21/mtrl_linear_out_slow_in.xml"
+    }
+]

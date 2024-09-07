@@ -1,0 +1,57 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:2:1-15:14
+INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:2:1-15:14
+INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:2:1-15:14
+	package
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:2:117-133
+		INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+		INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:2:70-116
+	xmlns:android
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:3:4-12:18
+meta-data#androidx.car.app.minCarApiLevel
+ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:4:5-82
+	android:value
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:4:63-80
+	android:name
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:4:16-62
+service#ti.car.TiCarService
+ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:6:5-11:15
+	android:exported
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:6:43-66
+	android:name
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:6:14-42
+intent-filter#action:name:androidx.car.app.CarAppService+category:name:androidx.car.app.category.PARKING
+ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:7:6-10:22
+action#androidx.car.app.CarAppService
+ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:8:7-62
+	android:name
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:8:15-60
+category#androidx.car.app.category.PARKING
+ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:9:7-67
+	android:name
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:9:17-65
+uses-feature#android.hardware.type.automotive
+ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:13:4-91
+	android:required
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:13:66-89
+	android:name
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml:13:18-65
+uses-sdk
+INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+		INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+		ADDED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml
+		INJECTED from /Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/AndroidManifest.xml

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/layout-v26/mtrl_calendar_month.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/afb054296791b6bc190432263e6d9d17/transformed/material-1.6.1/res/layout-v26/mtrl_calendar_month.xml"
+    },
+    {
+        "merged": "/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/build/intermediates/merged_res/release/layout-v26/abc_screen_toolbar.xml",
+        "source": "/Users/Max87/.gradle/caches/transforms-3/85a0f4b577959a2ad2aecc6eb8bb1298/transformed/appcompat-1.6.1/res/layout-v26/abc_screen_toolbar.xml"
+    }
+]

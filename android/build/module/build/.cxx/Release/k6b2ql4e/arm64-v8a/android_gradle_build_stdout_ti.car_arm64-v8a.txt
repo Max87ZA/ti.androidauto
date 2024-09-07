@@ -1,0 +1,8 @@
+Android NDK: WARNING:/Users/Max87/Developer/modules/Ti.androidauto/ti.androidauto/android/build/module/src/main/jni/Android.mk:ti.car: non-system libraries in linker flags: -lkroll-v8    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[arm64-v8a] Compile++      : ti.car <= TiModuleBootstrap.cpp
+[arm64-v8a] Compile++      : ti.car <= ti.car.TiCarModule.cpp
+[arm64-v8a] Prebuilt       : libc++_shared.so <= <NDK>/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/
+[arm64-v8a] SharedLibrary  : libti.car.so
